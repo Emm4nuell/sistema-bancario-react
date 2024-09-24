@@ -1,0 +1,37 @@
+.divinput{
+    position: relative;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.divinput label{
+    position: absolute;
+    margin: 5px 5px 0px;
+    margin-top: -25px;
+    font-size: 12px;
+    color: rgb(150, 150, 150);
+    transition: 0.5s ease-in-out;
+}
+
+.divinput input{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 2px;
+    border: 0;
+    color: rgb(150, 150, 150);
+    border-bottom: 2px solid rgb(200, 200, 200);
+    outline: none;
+}
+
+.divinput input:focus,
+.divinput input:valid{
+    border-bottom: 2px solid #27862776;
+}
+
+.divinput input:focus ~ label,
+.divinput input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 10px;
+    margin-left: 0px;
+}

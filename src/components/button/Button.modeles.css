@@ -1,0 +1,34 @@
+.btncustom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btncustom input{
+    width: 100%;
+    height: 2rem;
+    margin-top: 9px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#red{
+    background-color: #ffffff;
+    color: #278627;
+    border: 2px solid #ccc;
+}
+
+#green{
+    background-color: rgba(0, 128, 0, 0.642);
+    color: #ffffff;
+}
+
+#red:hover{
+    border: 2px solid rgba(0, 128, 0, 0.642);
+}
+
+#green:hover{
+    background-color: rgba(0, 128, 0, 0.824);
+}

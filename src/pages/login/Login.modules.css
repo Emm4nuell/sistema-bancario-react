@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.tela{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2786271f;
+}
+
+.formulario{
+    width: 50rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 60vh;
+    border: 1px solid green;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #27862776;
+    font-family: 'Inter', sans-serif;
+}
+
+.texto p{
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-indent: 15px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+form h3{
+    margin-bottom: 1rem;
+    font-size: 30px;
+    color: rgba(0, 128, 0, 0.642);
+}
+
+form p{
+    color: rgb(150, 150, 150);
+}
+
+form{
+    width: 90%;
+}
+
+@media screen and (max-width: 480px){
+    .tela{
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    }
+    
+    .formulario{
+        grid-template-columns: 1fr;
+        height: 100vh;
+        border: none;
+    }
+
+    form h3{
+        text-align: center;
+    }
+
+    .texto{
+        display: none;
+    }
+}
