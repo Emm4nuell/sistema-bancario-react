@@ -55,7 +55,7 @@ form{
     width: 90%;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 540px){
     .tela{
         display: flex;
         align-items: end;
