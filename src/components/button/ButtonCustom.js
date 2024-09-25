@@ -1,9 +1,9 @@
 import './Button.modeles.css'
 
-function ButtonCustom({titulo, tipo}) {
+function ButtonCustom({titulo, tipo, onclick}) {
     return(
         <div className="btncustom">
-            <input type="button" value={titulo} id={tipo} />
+            <input type="button" value={titulo} id={tipo} onClick={onclick} />
         </div>
     )
 }
