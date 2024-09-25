@@ -5,10 +5,14 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #2786271f;
+    background-image: url('https://img.freepik.com/vetores-gratis/superficie-geometrica-verde-palida_23-2148362563.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-position: center; /* Centraliza a imagem */
 }
 
-.formulario{
+.apresentacao{
+    background-color: #278627d5;
     width: 50rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -16,13 +20,49 @@
     border: 1px solid green;
 }
 
-.login{
+.divlogin{
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: white;
+    align-items: center;
+    flex-direction: column;
 }
 
+form{
+    width: 90%;
+}
+
+form h3{
+    margin-bottom: 1rem;
+    font-size: 30px;
+    color: #fff;
+}
+
+form p{
+    color: #fff;
+}
+
+form .senha{
+    font-size: 12px;
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.icons ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons svg{
+    font-size: 25px;
+    margin: 15px 9px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Tela de apresentacao */
 .texto{
     display: flex;
     align-items: center;
@@ -41,20 +81,6 @@
     color: #fff;
 }
 
-form h3{
-    margin-bottom: 1rem;
-    font-size: 30px;
-    color: rgba(0, 128, 0, 0.642);
-}
-
-form p{
-    color: rgb(150, 150, 150);
-}
-
-form{
-    width: 90%;
-}
-
 @media screen and (max-width: 540px){
     .tela{
         display: flex;
@@ -62,7 +88,7 @@ form{
         justify-content: end;
     }
     
-    .formulario{
+    .apresentacao{
         grid-template-columns: 1fr;
         height: 100vh;
         border: none;
