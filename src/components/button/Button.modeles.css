@@ -20,6 +20,12 @@
     border: 2px solid #ccc;
 }
 
+#blue{
+    background-color: #ffffff;
+    color: #08678C;
+    border: 2px solid #ccc;
+}
+
 #green{
     background-color: rgba(0, 128, 0, 0.642);
     color: #ffffff;

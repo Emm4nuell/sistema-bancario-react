@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/vetores-gratis/superficie-geometrica-verde-palida_23-2148362563.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-position: center; /* Centraliza a imagem */
+}
+
+.divform{
+    width: 35rem;
+    background-color: #278627d5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputsenha{
+    display: flex;
+    gap: 1rem;
+}
+
+.divform h1{
+    color: #fff;
+}
+
+form{
+    width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+    .divform{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .inputsenha{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .divform h1{
+        position: absolute;
+        margin-top: 2rem;
+        top: 0;
+    }
+
+    .divform{
+        height: 100vh;
+    }
+}
